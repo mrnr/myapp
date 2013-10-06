@@ -1,3 +1,4 @@
 class Pic < ActiveRecord::Base
-   attr_accessible :emotion, :hour, :learned
+	mount_uploader :image, ImageUploader
+   	attr_accessible :emotion, :hour, :learned, :image
 end
