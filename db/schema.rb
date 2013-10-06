@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(:version => 20131005203213) do
   create_table "pics", :force => true do |t|
     t.integer  "hour"
     t.string   "emotion"
-    t.text     "earned"
+    t.text     "learned"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

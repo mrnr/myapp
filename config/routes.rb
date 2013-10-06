@@ -3,7 +3,7 @@ Myapp::Application.routes.draw do
   # first created -> highest priority.
 
 root :to => 'staticpages#index'
-resources :pics
+resources :pics 
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
