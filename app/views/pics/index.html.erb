@@ -1,13 +1,13 @@
-<h1>My Pics</h1>
-<div class="my-wrapper">
+<h1 class="custom-font-2">Logging My Pics</h1>
+<div class="my-wrapper text-center">
 
 	<% @pics.each do |pic| %>
-		<div class="box stolen-surfbox">
+		<div class="span3 stolen-surfbox text-center">
 			<h2>
 				Hour <%= pic.hour %>
 			</h2>
 
-			<h3>
+			<h3 class="custom-font-1"> 
 				I feel <%= pic.emotion %>
 			</h3>
 

@@ -1,9 +1,14 @@
-<h1>Upload Your Pic</h1>
+<div class="my-wrapper text-center">
 
-<%= simple_form_for @pic do |f| %>
+	<h1>Upload Your Pic</h1>
 
-		<%= f.input :hour %>
-		<%= f.input :emotion %>
-		<%= f.input :learned %>
-		<%= submit_tag "save" %>
-<% end %>
+	<div class="my-wrapper">
+	<div class="span6 offset3 stolen-surfbox">
+		<%= simple_form_for @pic do |f| %>
+			<%= f.input :hour, :class => "span4" %>
+			<%= f.input :emotion %>
+			<%= f.input :learned %>
+			<%= submit_tag "save my picture", :class => 'tn btn-large btn-primary' %>
+		<% end %>
+	</div>
+</div>
