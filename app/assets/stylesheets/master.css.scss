@@ -7,7 +7,6 @@ body {
 }
 
 .custom-font-1 {
-
 	color: white;
 	font-family: Helvetica Neue Light,Helvetica Neue,Helvetica,san-serif;
 	font-weight: 200;
@@ -28,7 +27,6 @@ body {
 		margin-top: 60px;
 		}
 
-
 .box {
 	color: white;
 }
@@ -38,4 +36,9 @@ body {
 .my-wrapper h3,
 .my-wrapper p {
 	color:white;
+}
+
+.my-wrapper label {
+		color:white;
+		font-size: 28px;
 }

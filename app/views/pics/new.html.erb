@@ -5,9 +5,15 @@
 	<div class="my-wrapper">
 	<div class="span6 offset3 stolen-surfbox">
 		<%= simple_form_for @pic do |f| %>
-			<%= f.input :hour, :class => "span4" %>
-			<%= f.input :emotion %>
-			<%= f.input :learned %>
+			<%= f.input :hour, :label => 'which hour is this for?' %>
+
+			<br/>
+			<%= f.input :emotion, :label => 'How did you feel?', placeholder: 'I\'m super STOKED!' %>
+				
+			<br/>
+			<%= f.input :learned, :label => 'What did you learn?', placeholder: 'Ruby, Rials, CSS3, HTML5, Resposive Design, Databases, Models, Controlelrs, JUSTIN BIEBER is aweseome, aaaah!', :input_html => {:rows => 10} %>
+
+			<br/>
 			<%= submit_tag "save my picture", :class => 'tn btn-large btn-primary' %>
 		<% end %>
 	</div>
